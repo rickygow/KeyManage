@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  <ImageButton
+        android:id="@+id/ebtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn3" />
+  <TextView
+        android:id="@+id/desTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/descontentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Diffie-Hellman key agreement protocol was developed by Diffie and Hellman in 1976. The protocol allows two users to exchange a secret key over an insecure medium without any prior secrets. "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/setupTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Up Parameters"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Public Values"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <LinearLayout
+        android:id="@+id/linearLayout20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pTV200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="p: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+         <TextView
+            android:id="@+id/pTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(prime)"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/pET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06" />
+        <TextView
+            android:id="@+id/gTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/pTV300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(primitive root mod p)"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <EditText
+            android:id="@+id/gET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Secret Keys"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <LinearLayout
+        android:id="@+id/linearLayout124"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/aTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Josh's Secret Key (a): "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/aET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/bTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jack's Secret Key (b): "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/bET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06" />
+    </LinearLayout>
+    <TextView
+            android:id="@+id/rTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Both should be Integers.)"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/stepBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Step by Step Key Exchange" />
+
+    <TextView
+        android:id="@+id/warningTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn6" />
+
+
+        <TextView
+            android:id="@+id/joshTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+	 <LinearLayout
+        android:id="@+id/linearLayout234"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView138"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn7" />
+
+
+        <TextView
+            android:id="@+id/jackTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/keyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ </LinearLayout>
+</ScrollView>

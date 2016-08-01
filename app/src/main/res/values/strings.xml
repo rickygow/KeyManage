@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KeyManage</string>
+    <string name="title_activity_key_manage">KeyManageActivity</string>
+</resources>

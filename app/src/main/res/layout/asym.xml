@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/abtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn3" />
+
+    <TextView
+        android:id="@+id/desTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/descontentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asymmetric key encryption uses different keys for encryption and decryption. These two keys are mathematically related and they form a key pair. The key pair consists of public key and private key. There are two ways to use this key pair: 1. Public key as encryption key, and Private key as decryption key  2.Public key as decryption key, and Private key as encryption key"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/genAsymBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Asymmetric Keys" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/priTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Key:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/priET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pubTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public Key:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/pubET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/encryptTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here we will focus on RSA method which is using Public key as encryption key, and Private key as decryption key:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+  
+
+    <TextView
+        android:id="@+id/orgMsgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter the Original Message:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <EditText
+        android:id="@+id/orgMsgET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/beginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Encryption and Decryption" />
+
+    <TextView
+        android:id="@+id/warnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/enReTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryption Result:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/enReET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+    
+    <TextView
+        android:id="@+id/deReTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decryption Result:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <EditText
+        android:id="@+id/deReET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+    
+</LinearLayout>
+</ScrollView>

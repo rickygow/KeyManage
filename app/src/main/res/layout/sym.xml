@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/sbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn3" />
+
+    <TextView
+        android:id="@+id/desTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/descontentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symmetric key encryption uses same key, called secret key, for both encryption and decryption. Users exchanging data keep this key to themselves. Message encrypted with a secret key can be decrypted only with the same secret key."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/genSymBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Symmetric Keys" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/secretTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secret Key:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/secretET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine" android:enabled="false"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/orgRemMsgTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter the Original Message:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+         <TextView
+             android:id="@+id/orgMsgTV"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Original Message:"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <EditText
+             android:id="@+id/orgMsgSymET"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:inputType="textMultiLine" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/beginSymBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Encryption and Decryption" />
+    
+    <TextView
+        android:id="@+id/warnSymTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/enReSymTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryption Result:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/enReSymET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+    
+    <TextView
+        android:id="@+id/deReSymTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decryption Result:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <EditText
+        android:id="@+id/deReSymET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+    
+</LinearLayout>
+</ScrollView>
